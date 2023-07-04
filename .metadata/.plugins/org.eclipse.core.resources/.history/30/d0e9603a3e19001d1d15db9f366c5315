@@ -1,0 +1,5 @@
+package daynine.exceptions;
+
+public class CustomerNotFoundException {
+
+}

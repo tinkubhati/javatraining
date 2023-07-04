@@ -1,0 +1,26 @@
+package daynine.service;
+
+import java.util.List;
+
+import daynine.dto.Customer;
+
+public interface CustomerService {
+	//CRUD-- Create, Retrieve,Update and Delete operations
+	//Create
+	public Customer addCustomer(Customer customer);
+	
+	//Retrieve
+	public Customer getCustomerById(Integer customerId);
+	
+	//Retrieve all customers
+	public List<Customer> getCustomers();
+	
+	//Update
+	public Customer updateCustomer (Customer customer);
+	
+	//Delete
+	public String deleteCustomer(Customer customer);
+	
+	public String deleteCustomerById(Integer customerId);
+
+}

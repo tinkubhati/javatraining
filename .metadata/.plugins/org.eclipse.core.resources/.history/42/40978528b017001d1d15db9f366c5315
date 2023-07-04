@@ -1,0 +1,9 @@
+package com.prodapt.kvaluet.assignment.daytwo;
+
+public class Tourist {
+
+	private int id;
+	private String name;
+	private String city;
+	
+}

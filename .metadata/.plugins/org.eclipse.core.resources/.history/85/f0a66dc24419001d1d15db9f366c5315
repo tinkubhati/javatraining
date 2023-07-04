@@ -1,0 +1,38 @@
+package daynine.ui;
+
+
+import daynine.dto.Customer;
+import daynine.exceptions.CustomerNotFoundException;
+import daynine.service.CustomerServiceImpl;
+import daynine.service.CustomerService;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer cust =new Customer(1,"Yogita","Dehradun");
+		Customer cust1 =new Customer(2,"Yogi","Doon");
+		Customer cust2 =new Customer(3,"jyoti","Delhi");
+		
+		CustomerService customerService= new CustomerServiceImpl();
+		customerService.addCustomer(cust);
+		customerService.addCustomer(cust1);
+
+		customerService.addCustomer(cust2);
+
+		System.out.println(customerService.getCustomers());
+		try {
+			System.out.println(customerService.getCustomerById(4));
+		}
+		catch(CustomerNotFoundException e) {
+			System.out.println("No Customer with given Id");
+		}
+			
+		
+		
+		
+		
+ 
+	}
+
+}

@@ -1,0 +1,51 @@
+package com.kvaluent.assignment.eightjuly;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Substring {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter The String ");
+
+		Scanner sc = new Scanner(System.in);
+		String str = sc.next();
+		char substr;
+		int start =sc.nextInt();
+		int end =sc.nextInt();
+		sc.close();
+		
+		System.out.println("The Given String is ");
+		
+		for (int i=start;i<end;i++) {
+			
+		substr =str.charAt(i));
+			
+			
+		}
+		
+		System.out.println("The SubString is : " + 
+			
+		
+//		List<String> subString = new ArrayList<String>();
+//		List<String> string = new ArrayList<String>();
+//		for(int i=0;i<len;i++) {
+//			
+//			string.add(str);
+//		}
+		
+//		
+//
+//		System.out.println("The Given String is : "+ string);
+//		for(int i=start;i<end;i++) {
+//			
+//			subString.add(str);
+//		}
+//		
+//		System.out.println("The Sub String is : " +subString);
+
+	}
+
+}

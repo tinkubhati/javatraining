@@ -1,0 +1,7 @@
+package com.prodapt.kvaluet.assignment.daytwo;
+
+import java.util.Comparator;
+
+public class NameComp implements Comparator<T> {
+
+}

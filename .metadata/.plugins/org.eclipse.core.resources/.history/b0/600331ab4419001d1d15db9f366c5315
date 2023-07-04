@@ -1,0 +1,67 @@
+package daynine.ui;
+
+import java.util.List;
+
+
+
+import daynine.dao.CustomerDAO;
+import daynine.dto.Customer;
+import daynine.exceptions.CustomerNotFoundException;
+import daynine.service.CustomerService;
+
+
+
+public class MainApp implements CustomerService {
+    private CustomerDAO customerDAO;
+
+
+
+   @Override
+    public Customer addCustomer(Customer customer) {
+    
+        return customerDAO.addCustomer(customer);
+    }
+
+
+
+   @Override
+    public Customer getCustomerById(Integer customerId) throws CustomerNotFoundException {
+        // TODO Auto-generated method stub
+        return customerDAO.getCustomerById(customerId);
+    }
+
+
+
+   @Override
+    public List<Customer> getCustomers() {
+        // TODO Auto-generated method stub
+        return customerDAO.getCustomers();
+    }
+
+
+
+   @Override
+    public Customer updateCustomer(Customer customer) {
+        // TODO Auto-generated method stub
+        return customer;
+    }
+
+
+
+   @Override
+    public String deleteCustomer(Customer customer) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
+
+   @Override
+    public String deleteCustomerById(Integer customerId) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
+
+}

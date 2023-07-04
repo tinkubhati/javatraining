@@ -1,0 +1,5 @@
+package daynine.dao;
+
+public class CustomerDAOImpl {
+
+}
